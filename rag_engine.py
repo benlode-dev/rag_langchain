@@ -24,6 +24,8 @@ st.write("Python executable:", sys.executable)
 st.set_page_config(page_title="RAG")
 st.title("Retrieval Augmented Generation Engine")
 
+openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
+
 
 TMP_DIR = Path('Temp_Files')  # This will create Temp_Files in the current directory of the app
 
