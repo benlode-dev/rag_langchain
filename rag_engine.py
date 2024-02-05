@@ -19,10 +19,10 @@ import streamlit as st
 
 import sys
 
-st.write("Python executable:", sys.executable)
-
 st.set_page_config(page_title="RAG")
 st.title("Retrieval Augmented Generation Engine")
+
+st.write("Python executable:", sys.executable)
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
